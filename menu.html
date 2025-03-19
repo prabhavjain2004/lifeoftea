@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life of Tea - Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Life of Tea Logo" id="logo"></a>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-controls">
+                <div class="search-box">
+                    <input type="text" id="menuSearch" placeholder="Search menu items...">
+                    <div class="search-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="category-filters">
+                    <button class="category-btn active" data-category="all">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <line x1="3" y1="18" x2="21" y2="18"/>
+                        </svg>
+                        All
+                    </button>
+                    <button class="category-btn" data-category="tea">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="2" x2="6" y2="4"/>
+                            <line x1="10" y1="2" x2="10" y2="4"/>
+                            <line x1="14" y1="2" x2="14" y2="4"/>
+                        </svg>
+                        Tea
+                    </button>
+                    <button class="category-btn" data-category="coffee">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                        Coffee
+                    </button>
+                    <button class="category-btn" data-category="maggie">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 2h18v4H3z"/>
+                            <path d="M4 6v14"/>
+                            <path d="M20 6v14"/>
+                            <path d="M7 6c0 14 10 14 10 0"/>
+                        </svg>
+                        Maggie
+                    </button>
+                    <button class="category-btn" data-category="sandwich">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 6h18v4H3z"/>
+                            <path d="M3 14h18v4H3z"/>
+                        </svg>
+                        Sandwich
+                    </button>
+                    <button class="category-btn" data-category="fries">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M4 6l16-2M4 18l16-2"/>
+                        </svg>
+                        Fries
+                    </button>
+                    <button class="category-btn" data-category="shakes">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 8h14l-1 14H6L5 8Z"/>
+                            <path d="M7 3h10l2 5H5l2-5Z"/>
+                            <line x1="12" y1="12" x2="12" y2="18"/>
+                        </svg>
+                        Shakes
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Tea Category -->
+                        <tr data-category="tea">
+                            <td>Tea</td>
+                            <td>Classic Indian tea with aromatic spices</td>
+                            <td>₹10</td>
+                        </tr>
+                        <tr data-category="tea">
+                            <td>Lemon Masala Tea</td>
+                            <td>Refreshing tea with lemon and Indian spices</td>
+                            <td>₹10</td>
+                        </tr>
+                        <tr data-category="tea">
+                            <td>Gud Tea</td>
+                            <td>Traditional tea sweetened with jaggery</td>
+                            <td>₹20</td>
+                        </tr>
+                        <tr data-category="tea">
+                            <td>Waffle Tea</td>
+                            <td>Special tea served with a crispy waffle</td>
+                            <td>₹25</td>
+                        </tr>
+
+                        <!-- Coffee Category -->
+                        <tr data-category="coffee">
+                            <td>Hot Coffee</td>
+                            <td>Freshly brewed hot coffee</td>
+                            <td>₹20</td>
+                        </tr>
+                        <tr data-category="coffee">
+                            <td>Cold Coffee</td>
+                            <td>Chilled coffee with cream</td>
+                            <td>₹40</td>
+                        </tr>
+                        <tr data-category="coffee">
+                            <td>Irish Coffee</td>
+                            <td>Special coffee with Irish cream flavor</td>
+                            <td>₹80</td>
+                        </tr>
+
+                        <!-- Maggie Category -->
+                        <tr data-category="maggie">
+                            <td>Maggie</td>
+                            <td>Classic Maggie noodles</td>
+                            <td>₹40</td>
+                        </tr>
+                        <tr data-category="maggie">
+                            <td>Cheese Maggie</td>
+                            <td>Maggie topped with melted cheese</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="maggie">
+                            <td>Veggie Maggie</td>
+                            <td>Maggie with mixed vegetables</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="maggie">
+                            <td>Veggie Cheese Maggie</td>
+                            <td>Vegetable Maggie with cheese</td>
+                            <td>₹60</td>
+                        </tr>
+
+                        <!-- Sandwich Category -->
+                        <tr data-category="sandwich">
+                            <td>Cheese Chutney Sandwich</td>
+                            <td>Grilled sandwich with cheese and mint chutney</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="sandwich">
+                            <td>Cheese Chilli Sandwich</td>
+                            <td>Spicy sandwich with cheese and chilies</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="sandwich">
+                            <td>Cheese Corn Sandwich</td>
+                            <td>Grilled sandwich with cheese and sweet corn</td>
+                            <td>₹60</td>
+                        </tr>
+                        <tr data-category="sandwich">
+                            <td>Veg Cheese Sandwich</td>
+                            <td>Mixed vegetable sandwich with cheese</td>
+                            <td>₹60</td>
+                        </tr>
+
+                        <!-- Fries Category -->
+                        <tr data-category="fries">
+                            <td>French Fries</td>
+                            <td>Classic crispy french fries</td>
+                            <td>₹40</td>
+                        </tr>
+                        <tr data-category="fries">
+                            <td>Peri Peri Fries</td>
+                            <td>Fries tossed in peri peri seasoning</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="fries">
+                            <td>Chilly Fries</td>
+                            <td>Spicy fries with chili seasoning</td>
+                            <td>₹60</td>
+                        </tr>
+
+                        <!-- Shakes Category -->
+                        <tr data-category="shakes">
+                            <td>Butterscotch Shake</td>
+                            <td>Creamy butterscotch flavored shake</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="shakes">
+                            <td>Mango Shake</td>
+                            <td>Fresh mango milkshake</td>
+                            <td>₹50</td>
+                        </tr>
+                        <tr data-category="shakes">
+                            <td>Blueberry Shake</td>
+                            <td>Sweet blueberry flavored shake</td>
+                            <td>₹60</td>
+                        </tr>
+                        <tr data-category="shakes">
+                            <td>Chocolate Shake</td>
+                            <td>Rich chocolate milkshake</td>
+                            <td>₹60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Back to Top">↑</button>
+
+    <footer>
+        <p>© 2023 Life of Tea</p>
+    </footer>
+
+    <div id="background-animation"></div>
+</body>
+</html>

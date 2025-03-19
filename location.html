@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life of Tea - Location</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Life of Tea Logo" id="logo"></a>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle">Dark Mode</label>
+        </div>
+    </header>
+
+    <main>
+        <section id="location" class="location-section">
+            <h2>Visit Us</h2>
+            <div class="location-grid">
+                <div class="location-info">
+                    <div class="address-card">
+                        <h3>Our Address</h3>
+                        <p>GF 45, Raj Capital, Minal Residency,</p>
+                        <p>JK Road, Bhopal, Madhya Pradesh</p>
+                        <button id="openMapButton" class="map-button" onclick="window.open('https://maps.app.goo.gl/9Q5tyRCrD7Y9iZGa6', '_blank')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Open in Google Maps
+                        </button>
+                    </div>
+
+                    <div class="hours-card">
+                        <h3>Opening Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">9:00 AM - 10:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday - Sunday</span>
+                                <span class="time">8:00 AM - 11:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Quick Contact</h3>
+                        <p>
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <a href="tel:8640009034">86400 09034</a>
+                        </p>
+                        <p>
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <a href="mailto:lifeofteabhopal@gmail.com">lifeofteabhopal@gmail.com</a>
+                        </p>
+                        <p>
+                            <svg class="contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                            <a href="https://www.instagram.com/lifeofteabhopal" target="_blank">@lifeofteabhopal</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="location-image">
+                    <img src="photo1.jpg" alt="Life of Tea Store Front" class="store-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" title="Back to Top">↑</button>
+
+    <footer>
+        <p>© 2023 Life of Tea</p>
+    </footer>
+
+    <div id="background-animation"></div>
+</body>
+</html>
